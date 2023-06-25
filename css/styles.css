@@ -117,25 +117,36 @@ code {
 }
 
 #menu {
-    list-style: none;
-    padding: 0 1.5em;
+    list-style: auto;
+    border-right: 1px solid #e2e2e21c;
+    margin: 0 2.5em 0 0.5em;
+}
+
+#menu > li {
+    margin-left: 1em;
+    margin-bottom: 0.25em;
+}
+
+#menu > li:first-child {
+    margin-left: 0;
 }
 
 #menu a {
     display: block;
     cursor: pointer;
-    padding: 1em 0.5em;
+    padding: .5em 0.5em;
     text-decoration: none;
+    color: var(--color-text-secondary);
 }
 
 #menu a:hover {
-    background: hsl(0deg 0% 20%);
+    color: var(--color-light);
     text-decoration: underline;
 }
 
-#menu > li {
-    border-bottom: 1px solid;
-    border-color: hsl(0deg 0% 35%);
+a.nav-link.active {
+    color: var(--color-light)!important;
+    font-weight: 500;
 }
 
 .title-seciton {
