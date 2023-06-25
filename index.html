@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Documentation Page</title>
+</head>
+
+<body>
+    <div id="navbarMobile">
+        <div class="containerMobile">
+            <span><a style="text-decoration: none;" href="#">freeCodeCamp JS</a></span>
+            <button id="hammyButton" class="hamburguer">
+                <svg width="40" height="40" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <nav id="navbar">
+        <div id="containerNav">
+            <header class="primary-header">
+                <h1 id="title-page"><a style="text-decoration: none" href="#">freeCodeCamp JS</a></h1>
+            </header>
+            <div class="menu-container">
+                <ul id="menu">
+                    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+                    <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+                    <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+                    <li><a class="nav-link" href="#Variables">Variables</a></li>
+                    <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+                    <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
+                    <li><a class="nav-link" href="#Constants">Constants</a></li>
+                    <li><a class="nav-link" href="#Data_types">Data types</a></li>
+                    <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
+                    <li><a class="nav-link" href="#while_statement">while statement</a></li>
+                    <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+                    <li><a class="nav-link" href="#Reference">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h2 style="padding-top: .3em;" class="title-seciton">Introduction</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quibusdam quos facere omnis
+                    recusandae nam nisi sed debitis quidem exercitationem? Sint labore culpa porro officia qui nulla
+                    dolorem veniam eos!
+                </p>
+                <a href="#">officia link</a>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum? Saepe corporis fuga
+                        molestias id quidem amet consequuntur repellendus inventore in ipsa omnis impedit doloremque
+                        recusandae, similique alias dignissimos quam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum? Saepe corporis fuga
+                        molestias id quidem amet consequuntur repellendus inventore in ipsa omnis impedit doloremque
+                        recusandae, similique alias dignissimos quam.
+                    </li>
+                </ul>
+                <code>
+                    function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>
+                <h2 class="title-seciton">What you should already know</h2>
+            </header>
+            <article class="contenido">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <a href="#">officia link</a>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum? Saepe corporis fuga
+                        molestias id quidem amet consequuntur repellendus inventore in ipsa omnis impedit doloremque
+                        recusandae, similique alias dignissimos quam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum? Saepe corporis fuga
+                        molestias id quidem amet consequuntur repellendus inventore in ipsa omnis impedit doloremque
+                        recusandae, similique alias dignissimos quam.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum? Saepe corporis fuga
+                        molestias id quidem amet consequuntur repellendus inventore in ipsa omnis impedit doloremque
+                        recusandae, similique alias dignissimos quam.
+                    </li>
+                </ul>
+                <code>
+                    function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>
+                <h2 class="title-seciton">JavaScript and Java</h2>
+            </header>
+            <article class="contenido">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.possimus a exercitationem dolore aspernatur voluptatum earum laborum
+                    odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <a href="#" target="_blank" rel="noopener noreferrer">Java Link</a>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>
+                <h2 class="title-seciton">Hello world</h2>
+            </header>
+            <article class="contenido">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Fuga.possimus a exercitationem dolore aspernatur voluptatum earum laborum
+                    odit
+                    quidem, fugiat totam quam. Fuga.
+                </p>
+                <code>
+                    function greetMe(yourName) { alert("Hello " + yourName); }
+                    greetMe("World");
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+                <h2 class="title-seciton">Variables</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam.
+                </p>
+                <code>
+                    var x = 42.
+                </code>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam.
+                </p>
+                <code>
+                    x = 42.
+                </code>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi. Est amet ipsam reprehenderit
+                    rerum sapiente cumque alias possimus, sequi animi minus placeat veritatis in ex doloremque.
+                    Similique, quod ullam.
+                </p>
+                <code>
+                    let y = 13.
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Variable_scope">
+            <header>
+                <h2 class="title-seciton">Variable scope</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam.
+                </p>
+                <code>
+                    x = 42.
+                </code>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, excepturi. Est amet ipsam reprehenderit
+                    rerum sapiente cumque alias possimus, sequi animi minus placeat veritatis in ex doloremque.
+                    Similique, quod ullam.
+                </p>
+                <code>
+                    let y = 13.
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Global_variables">
+            <header>
+                <h2 class="title-seciton">Global variables</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+                    aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam.
+                </p>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, cumque molestias accusamus
+                        expedita minus, reprehenderit corporis possimus, aperiam voluptate veniam autem deserunt.
+                        Asperiores adipisci ea excepturi obcaecati nam commodi in.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, cumque molestias accusamus
+                        expedita minus, reprehenderit corporis possimus, aperiam voluptate veniam autem deserunt.
+                        Asperiores adipisci ea excepturi obcaecati nam commodi in.
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, cumque molestias accusamus
+                        expedita minus, reprehenderit corporis possimus, aperiam voluptate veniam autem deserunt.
+                        Asperiores adipisci ea excepturi obcaecati nam commodi in.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Constants">
+            <header>
+                <h2 class="title-seciton">Constants</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
+                    aperiam ea officia nisi
+                    distinctio quo reiciendis possimus a exercitationem dolore aspernatur voluptatum earum laborum odit
+                    quidem, fugiat totam quam.
+                </p>
+                <code>
+                    const PI = 3.14;
+                </code>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi sit nemo ducimus dolor
+                    aperiam quia ea deserunt, labore beatae magni, totam ad placeat consectetur. Libero aut qui corporis
+                    laudantium.
+                </p>
+                <code>
+                    // THIS WILL CAUSE AN ERROR
+                    function f() {}; const f = 5;
+                    // THIS WILL CAUSE AN ERROR ALSO
+                    function f() {
+                    const g = 5; var g;
+                    //statements }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_types">
+            <header>
+                <h2 class="title-seciton">Data types</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis numquam sunt perferendis
+                    consectetur facilis quaerat natus obcaecati! Dolores laboriosam ex accusantium minus libero aliquam
+                    voluptatibus! At esse iste neque.
+                </p>
+                <ul>
+                    <li>
+                        Boolean. true and false.
+                    </li>
+                    <li>
+                        null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not
+                        the same as Null, NULL, or any other variant.
+                    </li>
+                    <li>
+                        undefined. A top-level property whose value is undefined.
+                    </li>
+                    <li>
+                        Number. 42 or 3.14159.
+                    </li>
+                    <li>
+                        String. "Howdy"
+                    </li>
+                    <li>
+                        Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
+                    </li>
+                </ul>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus nisi odit? Doloremque
+                    voluptatum nostrum, cumque illum officia aliquid, deleniti laboriosam dolores et tenetur impedit? In
+                    totam facilis minima aliquid?</p>
+            </article>
+        </section>
+        <section class="main-section" id="if...else_statement">
+            <header>
+                <h2 class="title-seciton">if...else statement</h2>
+            </header>
+            <article class="contenido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis numquam sunt perferendis
+                    consectetur facilis quaerat natus obcaecati! Dolores laboriosam ex accusantium minus libero aliquam
+                    voluptatibus! At esse iste neque.
+                </p>
+                <code>
+                    if (condition) { statement_1; } else { statement_2; }
+                </code>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum possimus nisi odit? Doloremque
+                    voluptatum nostrum, cumque illum officia aliquid, deleniti laboriosam dolores et tenetur impedit? In
+                    totam facilis minima aliquid?</p>
+                <code>
+                    if (condition_1) { statement_1; } else if (condition_2) {
+                    statement_2; } else if (condition_n) { statement_n; } else {
+                    statement_last; }
+                </code>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere alias esse quaerat quibusdam qui ea,
+                    sed laborum dignissimos! Neque ea accusamus sapiente sit laudantium sint quae quis explicabo ipsa
+                    veritatis?</p>
+                <code>
+                    if (condition) { statement_1_runs_if_condition_is_true;
+                    statement_2_runs_if_condition_is_true; } else {
+                    statement_3_runs_if_condition_is_false;
+                    statement_4_runs_if_condition_is_false; }
+                </code>
+                <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can
+                    be confused with equality when glancing over the code. For example, do not use the following code:
+                </p>
+                <code>
+                    if (x = y) { /* statements here */ }
+                </code>
+                <code>
+                    if ((x = y)) { /* statements here */ }
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="while_statement">
+            <header>
+                <h2 class="title-seciton">while statement</h2>
+            </header>
+            <article class="contenido">
+                <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can
+                    be confused with equality when glancing over the code. For example, do not use the following code:
+                </p>
+                <code>
+                    while (condition) statement
+                </code>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo nostrum tempore quisquam
+                    consequuntur molestias architecto voluptatum dolorem animi inventore voluptas consequatur laudantium
+                    ullam, vero excepturi hic dolore error libero.</p>
+                <code>
+                    if ((x = y)) { /* statements here */ }
+                </code>
+                <p>
+                    The following while loop iterates as long as n is less than three:
+                </p>
+                <code>
+                    var n = 0; var x = 0; while (n < 3) { n++; x +=n; } </code> <p>
+                        </p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, cum. Quisquam eum numquam
+                        delectus, inventore debitis ratione repellat optio sunt aliquam ea dolor, eligendi odio
+                        accusamus sequi placeat beatae labore.
+                        </p>
+                        <ul>
+                            <li>After the first pass: n = 1 and x = 1</li>
+                            <li>After the second pass: n = 2 and x = 3</li>
+                            <li>After the third pass: n = 3 and x = 6</li>
+                        </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Function_declarations">
+            <header>
+                <h2 class="title-seciton">Function declarations</h2>
+            </header>
+            <article class="contenido">
+                <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can
+                    be confused with equality when glancing over the code. For example, do not use the following code:
+                </p>
+                <ul>
+                    <li>After the first pass: n = 1 and x = 1</li>
+                    <li>After the second pass: n = 2 and x = 3</li>
+                    <li>After the third pass: n = 3 and x = 6</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusamus neque minima odio
+                    placeat, error pariatur exercitationem perferendis eligendi quo aspernatur eaque corporis!
+                    Reiciendis reprehenderit minus accusamus eveniet numquam id.</p>
+                <code>
+                    function square(number) { return number * number; }
+                </code>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quam tenetur maxime, id, ab nemo
+                    odio saepe atque quae maiores dicta laborum nihil suscipit exercitationem aliquam sunt, facilis
+                    cupiditate rem!</p>
+                <code>
+                    return number * number;
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>
+                <h2 class="title-seciton">Reference</h2>
+            </header>
+            <article class="contenido">
+                <ul>
+                    <li>All the documentation in this page is taken from <a href="http://mdn.org/" target="_blank"
+                            rel="noopener noreferrer">MDN</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Un sitio web desarrollado para conseguir la certificación en "Diseño Web Responsivo" <br>otorgada por <a
+                href="http://freecodecamp.org/" target="_blank"
+                rel="noopener noreferrer">freeCodeCamp.org</a><br><br>Por <a href="http://michaelbarrera.ga/"
+                target="_blank" rel="noopener noreferrer">Michael Barrera</a>
+        </p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

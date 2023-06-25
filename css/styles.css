@@ -1,0 +1,251 @@
+/**
+ * Plantilla de estilos: M2
+ * By Michael Barrera - https://michaelbarrera.ga/
+ */
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
+
+:root {
+    /*Colors*/
+    --color-base: rgb(230 207 0);
+    --color-secondary: rgb(204 184 0);
+    --color-text: rgb(190 193 198);
+    --color-text-secondary: rgb(150 155 162);
+    --color-dark: rgb(23 23 23);
+    --color-light: rgb(252 252 252);
+    /*Fonts*/
+    --font-base: 'Lexend', sans-serif;
+    --size-text-base: 1em;
+    --size-text-heading: 1.7em;
+    --line-height-base: 1.5em;
+    /*Border*/
+    --border-size: 1px;
+    --border-color: #e2e2e2;
+    --border-radius: 7px;
+    /*Buttons*/
+    --btn-font-color: hsl(54deg 100% 7%);
+    --btn-border-color: hsl(54deg 100% 40%);
+}
+
+::selection {
+    background-color: var(--color-base);
+    color: var(--color-dark);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-base);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: var(--size-text-heading);
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    color: var(--color-text);
+    margin-bottom: 2em;
+    line-height: var(--line-height-base);
+    font-size: var(--size-text-base);
+}
+
+a {
+    color: var(--color-base);
+}
+
+body {
+    max-width: 1280px;
+    /* Proyecto de Documentación Técnica */
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-areas:
+    "nav content"
+    "footer footer";
+    /* Termina */
+    margin: 0 auto;
+    font-family: 'Lexend', sans-serif;
+    background: var(--color-dark);
+    color: var(--color-text);
+    border-top: 5px solid;
+    border-color: var(--color-base);
+}
+
+footer {
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 3.5em;
+    padding: 2em 1em 2em;
+    border-top: 1px solid;
+    border-color: hsl(0deg 0% 24%);
+}
+
+code {
+    display: block;
+    padding: 1.5em;
+    margin: 2em 0;
+    background: hsl(0deg 0% 20%);
+}
+
+/*Page Styles*/
+
+#navbar {
+    grid-area: nav;
+}
+
+#containerNav {
+    position: fixed;
+    max-width: 350px;
+}
+
+#main-doc {
+    grid-area: content;
+    padding: 0 1em;
+    max-width: 100%;
+}
+
+#title-page {
+    padding: 0 0.7em;
+}
+
+#menu {
+    list-style: none;
+    padding: 0 1.5em;
+}
+
+#menu a {
+    display: block;
+    cursor: pointer;
+    padding: 1em 0.5em;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background: hsl(0deg 0% 20%);
+    text-decoration: underline;
+}
+
+#menu > li {
+    border-bottom: 1px solid;
+    border-color: hsl(0deg 0% 35%);
+}
+
+.title-seciton {
+    padding-top: 1em;
+}
+
+#footer{
+    grid-area: footer;
+    text-align: left;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    body{
+        grid-template-columns: 270px auto;
+    }
+    #containerNav {
+        position: fixed;
+        max-width: 270px;
+    }
+}
+
+/* Mobile */
+
+#navbarMobile{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    body{
+        grid-template-columns: 0px auto;
+    }
+    #title-page {
+        padding: 0 1em;
+        font-size: 1.7rem;
+    }
+    #Introduction {
+        padding-top: 4em;
+    }
+    #containerNav{
+        display: none;
+        background: var(--color-dark);
+        width: 85vw;
+        height: 100vh;
+        width: 85vw;
+        height: 100vh;
+    }
+    #navbarMobile {
+        display: block;
+        position: fixed;
+        background: hsl(0deg 0% 25%);
+        border-top: 5px solid var(--color-base);
+        width: 100%;
+        min-height: 50px;
+        top: 0;
+    }
+    .containerMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 1em;
+        padding: 0.5em 0.5em;
+    }
+    .containerMobile > span a {
+        font-size: 1.3rem;
+        color: var(--color-light)!important;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    .hamburguer {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+      }
+      .line {
+        fill: none;
+        stroke: var(--color-light);
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+          stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+      }
+      .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+      }
+      .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+      }
+      .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+      }
+      
+}
